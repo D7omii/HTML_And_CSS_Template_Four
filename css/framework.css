@@ -1,3 +1,12 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
 /* Start Box */
 .d-flex {
     display: flex;
@@ -7,10 +16,18 @@
     align-items: center;
 }
 
+.w-full {
+    width: 100%;
+}
+
 /* End Box */
 /* Start padding + margin */
 .p-10 {
     padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
 }
 
 .p-20 {
@@ -53,6 +70,10 @@
 
 /* End font */
 /* Start border */
+.br-1 {
+    border: 1px solid #ccc;
+}
+
 .rad-6 {
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -61,7 +82,27 @@
     -o-border-radius: 6px;
 }
 
+.rad-10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 /* End border */
+/* Start Components */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* End Components */
+.o-hide {
+    overflow: hidden;
+}
+
 @media (max-width: 767px) {
     .hide-mobile {
         display: none;
