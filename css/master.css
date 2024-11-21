@@ -10,10 +10,14 @@
 
 * {
     box-sizing: border-box;
+    /* Start Scrollbar for firefox */
+    scrollbar-color: var(--blue-color) white;
+
 }
 
 body {
-    font-family: "Open Sans", serif;
+    /* font-family: "Open Sans", serif; */
+    font-family: "Open Sans", sans-serif;
     margin: 0;
 }
 
@@ -30,6 +34,24 @@ ul {
     padding: 0;
 }
 
+/* Strat Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-color);
+}
+
+/* End Scrollbar */
 .page {
     background-color: #f1f5f9;
     min-height: 100vh;
@@ -100,6 +122,7 @@ ul {
 .sidebar ul li a span {
     font-size: 14px;
     margin-left: 10px;
+    font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -163,7 +186,7 @@ ul {
     height: 10px;
     background-color: var(--red-color);
     right: -5px;
-    top: -6px;
+    top: -5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -175,6 +198,30 @@ ul {
     width: 32px;
     height: 32px;
     margin-left: 15px;
+}
+
+.page h1 {
+    margin: 20px 20px 40px;
+    font-weight: 600;
+}
+
+.page h1::before,
+.page h1::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.page h1::before {
+    background-color: white;
+    width: 120px;
+}
+
+.page h1::after {
+    background-color: black;
+    width: 40px;
 }
 
 /* End content head */
