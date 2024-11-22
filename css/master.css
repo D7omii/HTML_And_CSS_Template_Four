@@ -144,14 +144,14 @@ ul {
 /* Start content */
 /* Start content header */
 .head .search::before {
+    position: absolute;
     font-family: var(--fa-style-family-classic);
-    font-weight: 900;
     content: "\f002";
+    font-weight: 900;
     color: var(--grey-color);
     font-size: 14px;
-    position: absolute;
     left: 15px;
-    top: 48%;
+    top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -160,7 +160,6 @@ ul {
 }
 
 .head .search input {
-    font-size: 13px;
     margin-left: 5px;
     padding-left: 30px;
     width: 160px;
@@ -242,4 +241,62 @@ ul {
 }
 
 /* End contetn wrapper */
+/* Start Welcome Widget */
+.welcome .intro img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 20px;
+    margin-top: -32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .body>div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width: 767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+    }
+
+    .welcome .body>div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+/* End Welcome Widget */
 /* End content */
