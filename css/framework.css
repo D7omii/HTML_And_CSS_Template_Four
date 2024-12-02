@@ -12,6 +12,10 @@
     display: flex;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 .align-center {
     align-items: center;
 }
@@ -87,6 +91,10 @@
 
 .mr-20 {
     margin-right: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 .mb-10 {
@@ -171,12 +179,20 @@
     text-align: center;
 }
 
+.fs-13 {
+    font-size: 13px;
+}
+
 .fs-14 {
     font-size: 14px;
 }
 
 .fs-15 {
     font-size: 15px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 .fw-bold {
@@ -195,7 +211,7 @@
     border: none;
 }
 
-.br-1 {
+.b-ccc {
     border: 1px solid #ccc;
 }
 
