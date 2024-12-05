@@ -481,4 +481,62 @@ ul {
 }
 
 /* End Latest Uploads Widget */
+/* Start Current Project Progress Widget */
+.current-project ul::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background-color: var(--blue-color);
+}
+
+.current-project ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.current-project ul li.done::before {
+    background-color: var(--blue-color);
+}
+
+.current-project ul li.current::before {
+    animation: change-color 0.8s infinite alternate;
+    -webkit-animation: change-color 0.8s infinite alternate;
+}
+
+.current-project .launch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+/* End Current Project Progress Widget */
 /* End content */
+/* Start Animation */
+@keyframes change-color {
+
+    from {
+        background-color: var(--blue-color);
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/* End Animation */
