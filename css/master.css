@@ -522,10 +522,34 @@ ul {
     width: 160px;
     right: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 /* End Current Project Progress Widget */
+/* Start Reminders Widget */
+.reminders ul li .key {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+}
+
+.reminders ul li>.blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li>.green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li>.orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li>.red {
+    border-left: 2px solid var(--red-color);
+}
+
+/* End Reminders Widget */
 /* End content */
 /* Start Animation */
 @keyframes change-color {
